@@ -1,0 +1,17 @@
+CREATE TABLE Signup (
+    UserID INT PRIMARY KEY IDENTITY(1,1),
+    FullName VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) UNIQUE NOT NULL,
+    UserAddress VARCHAR(255),
+    Pincode CHAR(6),
+    MobileNumber CHAR(10) NOT NULL,
+    DateOfBirth DATE,
+    CreatePassword VARCHAR(50) NOT NULL,
+    ConfirmPassword VARCHAR(50) NOT NULL,
+    YearOfPassout INT,
+    DateOfJoining DATE,
+    Qualification INT  foreign key references Qualification(QualificationId),
+    Designation1 INT  foreign key references Designation(DesignationId),
+    TrainingMode INT  foreign key references TrainingMode(ModeId),
+	IsActive BIT DEFAULT 1
+);
