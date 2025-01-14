@@ -1,0 +1,4 @@
+CREATE TABLE TrainingMode (
+    ModeId INT PRIMARY KEY,
+    ModeName VARCHAR(100) NOT NULL
+);
