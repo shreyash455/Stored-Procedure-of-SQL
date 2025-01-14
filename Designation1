@@ -1,0 +1,4 @@
+CREATE TABLE Designation1 (
+    DesignationId INT PRIMARY KEY,
+    DesignationName VARCHAR(100) NOT NULL
+);
